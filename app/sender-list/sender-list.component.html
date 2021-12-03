@@ -1,0 +1,13 @@
+<section id="portfolio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" *ngfor="let sender of senders">
+                    <h3>Nom du destinateur : {{sender.fullName}} </h3>
+                    <p> Mail :{{sender.email}} </p>
+                    <p>Message: {{sender.comment}} </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

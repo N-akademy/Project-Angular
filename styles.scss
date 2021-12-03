@@ -1,0 +1,605 @@
+a { cursor: pointer; }
+
+.app-container {
+    min-height: 320px;
+    overflow: hidden;
+}
+
+.btn-delete-user {
+    width: 40px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.titreBorder {
+    position: relative;
+    display: inline-block;
+}
+
+.titreBorder:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 2px auto;
+    width: 38%;
+    height: 4px;
+    background: #F8533D;
+}
+
+section#slider {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+div.background {
+    width: 100%;
+    height: 100vh;
+    background-color: #0D1E4C;
+    opacity: 0.6;
+}
+
+section#slider img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.pres {
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    border: 4px solid #fff;
+    /* max-width: 80%; */
+    min-height: 60%; 
+    /* width: 66%; */
+}
+
+span.int {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: #eaeaea;
+}
+
+
+/************** ABOUT ME *************/
+
+section#me {
+    background: #558ee4;
+    min-height: 80vh;
+    width: 100%;
+    color: #fff;
+    padding: 88px 0 40px;
+    text-align: center;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .5);
+}
+
+section#me h1:after {
+    background: #fff;
+    margin-top: 6px;
+}
+
+section#me div p {
+    padding-top: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+section#me div img {
+    width: 240px;
+    border-radius: 50%;
+}
+
+a.btn-cv{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #0D1E4C;
+}
+a.btn-cv:hover{
+    color: #EE4437;
+}
+
+/************* PARCOURS *************/
+
+#formation {
+   background: rgba(0, 177, 177, 0.933);
+    min-height: 60vh;
+    color: #EE4437;
+    text-align: center;
+    padding: 75px 0 90px;
+}
+
+#formation h1, #experience h1{
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+#formation .fa-graduation-cap {
+    text-align: center;
+    font-size: 5rem;
+    color: #eaeaea;
+}
+
+.studyItem .rightArea {
+    border-left: solid 1px #EE4437;
+    padding-bottom: 40px;
+}
+
+.studyItem:last-child .rightArea {
+    padding-bottom: 0px;
+}
+
+.dates h5 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.dates {
+    color: #fff;
+    background: #EE4437;
+    width: 150px;
+    height: 150px;
+    padding: 40px 0 40px 0;
+    border-radius: 50%;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.dates:hover {
+    background: #F87E6F;
+}
+
+.arrowpart {
+    float: left;
+    width: 15px;
+    height: 60px;
+}
+
+.studyBox {
+    width: auto;
+    background: #f3f3f3;
+    border-bottom: solid 4px #eeeeee;
+    padding: 22px 47px 6px 47px;
+    margin-left: 15px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.studyBox p {
+    color: #252E55;
+    line-height: 21px;
+}
+
+.studyBox h4 {
+    color: #252E55;
+    font-weight: 650;
+    padding-bottom: 4px;
+}
+
+.studyBox h5 {
+    color: #252E55;
+}
+
+/************* EXPERIENCE *************/
+#experience {
+    background: #3fabce;
+    min-height: 60vh;
+    color: #EE4437;
+    text-align: center;    
+    padding: 75px 0 90px;
+}
+
+
+#experience .fa-laptop {
+    text-align: center;
+    font-size: 5rem;
+    color: #EE4437;
+}
+
+/************* COMPETENCE *************/
+
+section#competence {
+    height: auto;
+    background: linear-gradient(to right, #fff 0, #fff 50%, #f3f3f3 50%, #f3f3f3 100%);
+    padding-bottom: 60px;
+    color: #0D1E4C;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+section#competence .left-float-skill,
+section#competence .right-float-skill {
+    width: 50%;
+    padding-top: 60px;
+}
+
+.left-float-skill,
+.left-wrapper {
+    float: left;
+}
+
+section#competence .compLeft {
+    margin-left: auto;
+    padding: 40px 40px 40px 0;
+}
+
+section#competence .compLeft,
+section#competence .compRight {
+    width: 90%;
+    max-width: 500px;
+}
+
+ul.compItems {
+    padding-bottom: 6px;
+}
+
+ul.compItems li {
+    display: inline-block;
+    padding: 0 1em;
+    margin: 5px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+   
+    /*Pour le javascript*/
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .6s;
+}
+
+ul.compItems li.inView {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ul.compItems li:hover {
+    background: #F87E6F;
+    transition: all .3s;
+}
+
+section#competence .compRight {
+    margin-right: auto;
+    padding: 40px 0 40px 40px;
+}
+
+section#competence .left-float-skill,
+section#competence .right-float-skill {
+    width: 50%;
+    padding-top: 50px;
+
+}
+
+.right-float-skill,
+.right-wrapper {
+    float: right;
+}
+
+section#competence h3 {
+    padding-top: 6px;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+
+
+section#competence .fa-code, section#competence .fa-globe{
+    color: #EE4437;
+    font-size: 2.2rem;
+    margin-right: 10px;
+}
+
+section#competence .fa-briefcase, section#competence .fa-user-circle{
+    color: #EE4437;
+    font-size: 1.9rem;
+    margin-right: 8px;
+}
+/************* CONNEXION *************/
+section#connect {
+    background-color:#7ed6df;
+    padding:0px;
+    margin: 0px;
+    height: 100%;  
+}
+h2{
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-container-left{
+    width: 50%;
+    height:100%;
+    float: left;   
+}
+
+.button-container-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#button_modal{
+    margin: 148px;
+    width: 40%;
+    background-color:#ff7979;
+    color:white;
+    font-size:30px;
+    border:none;
+    margin-bottom: 255px;
+    cursor: pointer;
+    top:150px;
+}
+
+#modal{
+    height: 50%;
+    width: 40%;
+    background-color:#22a6b3;
+    float: left;
+    position: absolute;
+    top:-3000px;
+    left:5%;
+    transition: 0;
+}
+    
+#modalOne{
+    height: 50%;
+    width: 40%;
+    background-color:#22a6b3;
+    float: right;
+    position: absolute;
+    top:-3000px;
+    right:5%;
+    transition: 0;
+}
+
+#close{
+    height:15%;
+    width: 40%;
+    background-color:#686de0;
+    color:white;
+    font-size:30px;
+    border:none;
+    cursor: pointer;
+}
+/************* PORFOLIO *************/
+
+section#portfolio {
+    background-color: #5dc0ee;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+#portfolio h1 {
+    font-family: cursive;
+    font-size: 3.2em;
+}
+
+#myTab {
+    padding-top: 12px;
+}
+
+#portfolio .titreBorder:after {
+    background: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+#myTabContent {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.modal-dialog {
+    max-width: 700px !important;
+}
+
+.modal-title{
+    color: #0D1E4C;  
+}
+.modal-left img{
+    width: 100%;
+    height: auto;
+}
+
+.modal-right {
+  color: #0D1E4C;  
+    text-align: left;
+}
+
+.modal-right h5{
+    font-size: 1.1em;
+}
+
+.modal-right p{
+    font-size: 0.9em;
+}
+
+.card-header {
+    padding: .75rem 0.25rem !important;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(13,30,76,0.5);
+  color: #f1f1f1; 
+  width: 90%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.work-item:hover .overlay {
+  opacity: 1;
+}
+
+.fa-search-plus{
+    margin-right: 0 !important;
+}
+
+.work-item{
+    margin: 10px 0;
+}
+
+/***************Users******************/
+
+  th, td {
+    padding: 15px;
+  }
+/************* CONTACT *************/
+
+#contact {
+    background: rgba(2, 178, 248, 0.897);
+    padding: 40px 60px 20px;
+    min-height: 65vh;
+    text-align: center;
+}
+
+#contact h1 {
+    color:whitesmoke;
+    padding-bottom: 0.4em;
+    font-weight: 700;
+}
+
+#contact label {
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+#contact .btn {
+    background: #EE4437;
+    border: none;
+   /* width: 100%;*/
+    padding: 10px 40px;
+}
+
+#contact .btn:hover {
+    opacity: 0.8;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.networks li {
+    color: #fff;
+    list-style-type: none;
+    font-size: 1.3em;
+    display: inline-flex;
+}
+
+.networks li a {
+    text-decoration: none;
+    margin: 24px 10px;
+}
+
+/* social network icons */
+
+.fa {
+    padding: 16px;
+    font-size: 1.8em;
+    width: 52px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 100px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.fa:hover{
+    opacity: 0.6;
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.fa-arrow-circle-down {
+    color: #08112A;
+    margin-right: 0;
+    font-size: 3em;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+}
+
+.fa-github{
+    background: #24292E;
+}
+
+.fa-500px {
+    background: #000;
+}
+
+.fa-codepen {
+    background: #24292E;
+}
+
+
+textarea {
+    min-height: 250px;
+}
+ 
+/************* FOOTER *************/
+
+#footer {
+    width: 100%;
+    padding: 8px 0;
+    background-color:rgb(0, 89, 255);
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .5);
+}
+
+#footer p {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-legal{
+    cursor: pointer;
+}
+/* You can add global styles to this file, and also import other style files */

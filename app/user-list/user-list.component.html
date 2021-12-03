@@ -1,0 +1,21 @@
+<h2>Tableau d'utilisateurs</h2>
+<table class="table table-striped" >
+  <tr> 
+    <th>Surnom</th>
+    <br><br>
+    <th>Mot de Passe</th>
+    <th>Nom / Prénom</th>
+    <br><br>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.username }}</td>
+    <br>
+    <td>{{ user.password }}</td>
+    <td>{{ user.firstName }} {{ user.lastName }}</td>
+    <br>
+    <td>{{ user.email }}</td>
+  </tr>
+</table>
+
+<a routerLink="/new-user">Nouvel utilisateur</a>

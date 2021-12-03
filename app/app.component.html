@@ -1,0 +1,61 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" >
+  <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/" routerLinkActive="active">Home</a>
+      <li routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
+      <a class="nav-item nav-link" routerLinkActive="active">A PROPOS DE MOI</a>
+      <a class="nav-item nav-link" routerLinkActive="active">PARCOURS</a>
+      <a class="nav-item nav-link" routerLinkActive="active">EXPERIENCE</a>
+      <a class="nav-item nav-link" routerLinkActive="active">COMPÉTENCES</a>
+      <a class="nav-item nav-link" routerLinkActive="active">PORTFOLIO</a>
+      <a class="nav-item nav-link" routerLink="users" >Users</a>
+      <a class="nav-item nav-link" >Logout</a>
+      <a class="nav-item nav-link" routerLinkActive="active">CONTACT</a>
+      <a class="nav-item nav-link" >Message reçu</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container" >
+  <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<footer id="footer">
+  <p> &copy; 2020 All rights reserved | Wachani Norhen | 
+      <a class="btn-legal" data-toggle="modal" data-target="#mentionsLegales">Mentions Légales</a>
+  </p>
+<!-- mentions légales -->
+  <div class="modal fade" id="mentionsLegales" tabindex="-1" role="dialog" 
+  aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                      <img src="../assets/me.jpg" alt="Logo du Portfolio  - Développeuse Junior" src="assets/me.jpg" style="width: 14%">
+                  Mentions légales</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+              Le site  est géré et développé par :<br>
+              Wachani Norhen
+              <br>
+              <br>
+              Le site  est hébergé par :<br>
+              Société LWS (Ligne Web Services)<br>
+              SAS au capital de 1 000 000 Euros<br>
+              RCS Paris B 851 993 683<br>
+              N° TVA : FR 21 851 993 683<br>
+              Siège social :<br>
+              10 rue Pentièvre<br>
+              75008 Paris<br>
+              France<br>
+              Hébergeur : LWS SAS<br>
+              Tél : 01 77 62 30 03<br>
+          </div>
+      </div>
+  </div>
+</div>
+</footer>

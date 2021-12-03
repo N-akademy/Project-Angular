@@ -1,0 +1,49 @@
+<!-- CONTACT  ---------------------------------------->
+<section id="contact">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="titreBorder">Get In Touch</h1>
+        </div>
+        
+        <div class="col-lg-12">
+            <ul class="networks">
+                <li>
+                    <a href="https://www.linkedin.com/in/norhen-wachani/" target="_blank" rel="noopener" class="fa fa-linkedin"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/N-akademy" target="_blank" rel="noopener" class="fa fa-github"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <h1 class="titreBorder">Me contacter</h1>
+    </div>
+    
+    <div class="col-lg-8 mx-auto">
+
+        <form [formGroup]="sform" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="fullName">NOM</label>
+                    <input  type="text" class="form-control"  name="fullName" formControlName="fullName">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="email">MAIL</label>
+                    <input  type="email" class="form-control" 
+                    name="email" formControlName="email" >
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="comment">MESSAGE</label>
+                    <textarea  class="form-control"  formControlName="comment" name="comment"  rows="3" ></textarea>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit" [disabled] ="sform.invalid">Envoyer</button>         
+        </form>
+
+    </div>
+
+
+</section>
+<!-- CONTACT END ---------------------------------------->

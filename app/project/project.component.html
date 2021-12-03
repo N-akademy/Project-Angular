@@ -1,0 +1,133 @@
+<section id="portfolio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="w-100">
+                <h1 class="titreBorder">Portfolio</h1>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="true">Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="certificats-tab" data-toggle="tab" href="#certificats" role="tab" aria-controls="certificats" aria-selected="false">Certifications</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <!-- Content Web -->
+            <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="home-tab">
+                <p>En cours de réalisation</p>
+            <!--- Hi {{user.firstName}} -->
+        <p><a routerLink="/users">Manage Users</a></p>
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-sm-3 work-item sc-item">
+                            <a href="#" data-toggle="modal" data-target="#magique">
+                                <img class="img-fluid" src="../assets/flexbox.png" alt="Projet 1" />
+                                <div class="overlay">
+                                    <i class="fa fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="modal fade" id="magique" tabindex="-1" role="dialog" aria-labelledby="magique" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Projet flexbox </h5>
+                                        <br>
+                                        <img class="img-fluid" src="../assets/cmag.png" alt="Projet 1"/>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 work-item sc-item">
+                            <a href="#" data-toggle="modal" data-target="#php">
+                                <img class="img-fluid" src="../assets/wip.png" alt="Projet 2" />
+                                <div class="overlay">
+                                    <i class="fa fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade" id="php" tabindex="-1" role="dialog" 
+                        aria-labelledby="php" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Projet php</h5>
+                                        <button type="button" class="close" 
+                                        data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 work-item sc-item">
+                            <a href="#" data-toggle="modal" data-target="#php">
+                                <img class="img-fluid" src="../assets/wip.png" alt="Projet 3" />
+                                <div class="overlay">
+                                    <i class="fa fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade" id="php" tabindex="-1" role="dialog" 
+                        aria-labelledby="php" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Projet javascript</h5>
+                                        <button type="button" class="close" 
+                                        data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Content certificats -->
+            <div class="tab-pane fade" id="certificats" role="tabpanel" aria-labelledby="contact-tab">
+            <p>Certifications obtenues à l'issue de la suivie des cours en ligne</p>
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-sm-3 work-item">
+                            <a href="#" data-toggle="modal" data-target="#cert-angular">
+                                <img class="img-fluid" src="../assets/26A.png" alt="Logo 26Academy" />
+                                <div class="overlay">
+                                    <i class="fa fa-search-plus"></i>Angular
+                                </div>
+                            </a>
+                        </div>
+                        <div class="modal fade" id="cert-angular" tabindex="-1" role="dialog" aria-labelledby="aim" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Certifications Angular via 26Academy</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12 modal-left">
+                                                <img src="../assets/CertificatA.jpg" alt="certificat angular" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>           
